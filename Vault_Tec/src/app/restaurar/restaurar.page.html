@@ -1,0 +1,43 @@
+<ion-content class="ion-padding">
+
+  <div class="ion-text-center ion-padding">
+    <strong class="titulo_principal">VAULT-TEC OPERATING SYSTEM</strong>
+    <div>
+      <strong class="titulo_principal">COPYRIGHT 2023-2025 VAULT-TEC</strong>
+    </div>
+    <div>
+      <strong class="titulo_principal">-RESTAURAR CONTRASEÑA-</strong>
+    </div>
+    <br>
+  </div>
+
+  <ion-item>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Nueva contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="npass"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Confirme nueva contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="ncpass"></ion-input>
+  </ion-item>
+
+  <ion-content>
+    <div class="ion-text-center ion-align-items-center">
+      <ion-button class="btn_restaurar" color="success" (click)="restaurar()">Actualizar contraseña</ion-button>
+    </div>
+    
+    <div class="div_volver">
+      <a class="link_volver" (click)="iraInicio()"> > Volver atras</a>
+    </div>
+
+    <div class="ion-text-center ion-align-items-center">
+      <img class="logo" src="/assets/logo.png" width="240px" alt="">
+    </div>
+  </ion-content>
+
+</ion-content>

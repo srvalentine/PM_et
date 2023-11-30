@@ -1,0 +1,43 @@
+ion-content {
+  --background: url('/assets/fondo.png') center center fixed no-repeat;
+  background-size: auto;
+}
+
+.btn_restaurar{
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.div_volver{
+    position: absolute;
+    margin-top: 100px;
+    left: 0;
+    padding: 10px; 
+}
+
+.link_volver{
+    color: rgb(98, 208, 145);
+    text-decoration: none;
+}
+
+.titulo_principal{
+    font-size: 18px;
+    color: rgb(98, 208, 145);
+  }
+  
+  .titulo_secundario{
+    color: rgb(98, 208, 145);
+    font-size: 16px;
+    text-align: left;
+    margin-right: 10px;
+    margin-top: 20px;
+  }
+  
+  .logo{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 12px;
+  }

@@ -1,0 +1,55 @@
+<ion-content class="ion-padding">
+
+  <div class="ion-text-center ion-padding">
+    <strong class="titulo_principal">VAULT-TEC OPERATING SYSTEM</strong>
+    <div>
+      <strong class="titulo_principal">COPYRIGHT 2023-2025 VAULT-TEC</strong>
+    </div>
+    <div>
+      <strong class="titulo_principal">-ASISTENCIA-</strong>
+    </div>
+    <br>
+  </div>
+
+  <!-- <div class="ion-text-center ion-padding"> 
+     <img *ngIf="selfieImageSrc" [src]="selfieImageSrc" alt="Selfie">
+  </div> -->
+  <br>
+  <div *ngIf="capturedPhoto">
+    <img [src]="capturedPhoto.webPath" alt="Foto capturada">
+    <br>
+  </div>
+  <br>
+  <div class="ion-text-center ion-align-items-center botones">
+    <ion-button class="button-primary" color="success" (click)="tomarFoto()">Tomar Selfie</ion-button>
+    <ion-button (click)="borrarFoto()"color="danger">Eliminar Foto</ion-button>
+  </div>
+
+  <div *ngIf="loggedInUser" class="ion-text-start">
+    <ion-text class="usuario"> > Hola, {{ loggedInUser.name }} {{ loggedInUser.lname }}</ion-text>
+    <div>
+      <ion-text class="rut_usuario">Rut: {{ loggedInUser.rut }}</ion-text><br>
+      <ion-text class="rut_usuario">------------------------</ion-text>
+    </div>
+  </div>
+
+  <div class="ion-text-start" *ngIf="qrData">
+    <ion-text class="usuario">Profesor: {{ qrData.profesor }}</ion-text><br>
+    <ion-text class="usuario">Hora de Clase: {{ qrData.hora }}</ion-text><br>
+    <ion-text class="usuario">Sala: {{ qrData.sala }}</ion-text><br>
+    <ion-text class="usuario">Dia: {{ qrData.dia }}</ion-text><br>
+    <ion-text class="rut_usuario">------------------------</ion-text><br>
+    <ion-text class="coordenadas">Coordenadas:</ion-text><br>
+    <ion-text class="coordenadas">Latitud: {{ latitud }}</ion-text><br>
+    <ion-text class="coordenadas">Longitud: {{ longitud }} </ion-text>
+  </div>
+
+  <div class="div_volver">
+    <a class="link_volver" (click)="iraInicio()"> > Cerrar sesión y volver al inicio</a>
+  </div>
+
+  <div class="ion-text-center ion-align-items-center">
+    <img class="logo" src="/assets/logo.png" width="240px" alt="">
+  </div>
+
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-content class="ion-padding">
+
+  <div class="ion-text-center ion-padding">
+    <strong class="titulo_principal">VAULT-TEC OPERATING SYSTEM</strong>
+    <div>
+      <strong class="titulo_principal">COPYRIGHT 2023-2025 VAULT-TEC</strong>
+    </div>
+    <div>
+      <strong class="titulo_principal">-INICIO DE SESION-</strong>
+    </div>
+    <br>
+  </div>
+
+  <ion-item>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="username"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="password"></ion-input>
+  </ion-item>
+
+  <ion-content>
+    <div class="ion-text-center ion-align-items-center">
+      <ion-button class="btn_iniciar" color="success" (click)="login()">Iniciar sesión</ion-button>
+    </div>
+
+    <div class="ion-text-center ion-align-items-center">
+      <a class="link_olvido" color="success" (click)="iraRestaurar()"> > ¿Olvido su contraseña?</a>
+    </div>
+    
+    <div class="div_volver">
+      <a class="link_volver" (click)="iraInicio()"> > Volver al inicio</a>
+    </div>
+  </ion-content>
+
+</ion-content>
